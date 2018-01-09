@@ -22,6 +22,7 @@ namespace CardsAgainstInfusion
                 return cardToPlay;
             } else
             {
+                //TODO: investigate what the best exception type to throw
                 throw new ArgumentException();
             }
         }
