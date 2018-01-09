@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace CardsAgainstInfusion
 {
-    class Program
+    interface Player
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
