@@ -14,7 +14,16 @@ namespace CardsAgainstInfusion
 
         public Card PlayCard(int cardNumber)
         {
-            throw new NotImplementedException();
+            if ((cardNumber <= Hand.Count) && (cardNumber > 0))
+            {
+                Card cardToPlay = Hand[cardNumber-1];
+                Hand.Remove(cardToPlay);
+
+                return cardToPlay;
+            } else
+            {
+                throw new ArgumentException();
+            }
         }
     }
 }
