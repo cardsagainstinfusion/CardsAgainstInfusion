@@ -1,12 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CardsAgainstInfusion
 {
-    class Consultant:Player
+    class Consultant : Player
     {
+        List<Card> Hand;
+
+        public void DrawCard(Model.TypeOfCard cardType, int numberOfCards)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Card PlayCard(int cardNumber)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
