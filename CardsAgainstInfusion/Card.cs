@@ -9,7 +9,7 @@ namespace CardsAgainstInfusion
 {
     class Card
     {
-        Card(TypeOfCard color, string cardText, List<string> tags, string playedBy)
+        public Card(TypeOfCard color, string cardText, List<string> tags, string playedBy)
         {
             Color = color;
             CardText = cardText;
