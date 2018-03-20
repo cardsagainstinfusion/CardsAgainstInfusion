@@ -7,9 +7,25 @@ namespace CardsAgainstInfusion
     {
         List<Card> Hand;
 
-        public void DrawCard(Model.TypeOfCard cardType, int numberOfCards)
+        /// <summary>
+        /// DrawCard adds the specified number of white cards to the consultant's hand from the deck of white cards
+        /// </summary>
+        /// <param name="whiteDeck">The deck of cards to draw from</param>
+        /// <param name="numberOfCards">The number of cards being drawn from the deck</param>
+        public void DrawCard(List<Card> whiteDeck, int numberOfCards)
         {
-            throw new NotImplementedException();
+            if (numberOfCards <= whiteDeck.Count)
+            {
+                for (int i = 0; i < numberOfCards; i++)
+                {
+                    Hand.Add(whiteDeck[0]);
+                    whiteDeck.RemoveAt(0);
+                }
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException();
+            }
         }
 
         public Card PlayCard(int cardIndex)

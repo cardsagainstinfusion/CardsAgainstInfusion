@@ -11,7 +11,7 @@ namespace CardsAgainstInfusion
         static void Main(string[] args)
         {
             #region Blue Cards
-            List<Card> blueCards = new List<Card>()
+            List<Card> blueDeck = new List<Card>()
             {
                 new Card(Model.TypeOfCard.Blue, "Whenever I think of rainbows _______", new List<string>()
                 {
@@ -50,7 +50,7 @@ namespace CardsAgainstInfusion
             #endregion
 
             #region White Cards
-            List<Card> whiteCards = new List<Card>()
+            List<Card> whiteDeck = new List<Card>()
             {
                 new Card(Model.TypeOfCard.White, "That's what Batman would do.", new List<string>()
                 {

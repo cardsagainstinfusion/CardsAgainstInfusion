@@ -23,7 +23,7 @@ namespace CardsAgainstInfusion
 {
     interface Player
     {        
-        void DrawCard(TypeOfCard cardType, int numberOfCards);
+        void DrawCard(List<Card> deck, int numberOfCards);
 
         Card PlayCard(int cardNumber);
     }
